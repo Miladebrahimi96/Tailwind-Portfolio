@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 
-function App() {
+//Components
+import Home from './pages/Home';
+import Navbar from './components/Navbar';
+import Projects from './pages/Projects';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import ProjectDetails from './pages/ProjectDetails';
+import Footer from './components/Footer';
+
+//Context
+import MenuContextProvider from "./contexts/MenuContextProvider";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='relative'>
+      <MenuContextProvider>
+        <Navbar/>
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path='/projects' element={<Projects/>} />
+          <Route path='/projects/:id' element={<ProjectDetails/>} />
+          <Route path='/aboutme' element={<About/>} />
+          <Route path='/contact' element={<Contact/>} />
+        </Routes>
+        <Footer/>
+      </MenuContextProvider>
     </div>
   );
-}
+};
 
 export default App;
