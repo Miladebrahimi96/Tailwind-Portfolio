@@ -32,7 +32,7 @@ export const projects = [
         description: 'This website is a online resume for myself which you are browsing right now. Contains informations about me, my projects and multiple ways to contact me. This website is full moble responsive.',
         techs: ['React', 'Context', 'Styled-components', 'React Routes', 'React Icons', 'Tailwind'] ,
         github: 'https://github.com/Miladebrahimi96/CryptoApp',
-        demo: 'https://crypto-app-nu-sooty.vercel.app/cryptocurrencies', 
+        demo: 'https://tailwind-portfolio-plum.vercel.app/', 
         image: "https://i.ibb.co/q7RVjkr/portfolio.jpg"
     },
     {
@@ -40,7 +40,7 @@ export const projects = [
         title: 'Registration Form',
         description: 'Sign up and Login Form with full validation created from scratch without using any libraries.',
         techs: ['React','React Routes', 'toastify'] ,
-        github: 'https://github.com/Miladebrahimi96/registration-form',
+        github: 'https://github.com/Miladebrahimi96/Tailwind-Portfolio',
         demo: 'https://registration-form-zeta-three.vercel.app/',
         image: 'https://i.ibb.co/xMHdNpX/register.jpg'
     },
